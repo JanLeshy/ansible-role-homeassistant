@@ -1,0 +1,23 @@
+galaxy_info:
+  author: Jan Roepke
+  description: Ansible Role to install and/or update homeassistant on a remote server
+  license: MIT
+  role_name: ansible_role_homeassistant
+  min_ansible_version: "2.15" 
+
+  platforms:
+    - name: Debian
+      versions:
+        - bookworm
+
+  galaxy_tags:
+    - homeassistant
+    - homeautomation
+    - automation
+    - admin
+    - observability
+    - monitoring
+    - iot
+    - energy
+
+dependencies: []
