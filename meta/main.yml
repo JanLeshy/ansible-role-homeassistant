@@ -2,6 +2,7 @@ galaxy_info:
   author: Jan Roepke
   description: Ansible Role to install and/or update homeassistant on a remote server
   license: MIT
+  namespace: janleshy
   role_name: ansible_role_homeassistant
   min_ansible_version: "2.15" 
 
