@@ -1,4 +1,4 @@
-# Role Name
+# Homeassistant
 
 This role installs Home Assistant on a remote server with all required dependencies and configures it to run as a service.
 
