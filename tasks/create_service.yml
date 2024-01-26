@@ -9,4 +9,10 @@
   notify: 
   - "Start Home Assistant"
 
+- name: Enable service homeassistant.service for automatic boot start, and not touch the state
+  ansible.builtin.service:
+    name: homeassistant.service
+    enabled: yes
+
+
 
