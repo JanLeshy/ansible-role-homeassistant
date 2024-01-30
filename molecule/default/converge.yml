@@ -5,4 +5,4 @@
 
   - name: Import role homeassistant
     ansible.builtin.include_role:
-      name: homeassistant
+      name: ansible_role_homeassistant
