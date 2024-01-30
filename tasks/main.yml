@@ -41,7 +41,7 @@
       - homeassistant
       - service
 
-- name: Create cron entry for delete backup,after {{ ha_backup_delete_after_days }} days
+- name: Create cron entry for delete backup,after "{{ ha_backup_delete_after_days }}" days
   ansible.builtin.import_tasks: create_cron_to_delete_backups.yml
   tags:
       - homeassistant

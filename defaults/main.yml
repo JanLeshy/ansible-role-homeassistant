@@ -17,6 +17,9 @@ ha_check_delay: 25
 # python version
 ha_python: 3.11
 
+# create a cron job to delete backups
+ha_backup_cron: false
+
 # delete backup after given days
 ha_backup_delete_after_days: 7
 

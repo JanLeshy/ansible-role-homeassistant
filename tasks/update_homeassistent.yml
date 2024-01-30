@@ -1,6 +1,6 @@
 ---
 - name: Stop running homeassistant service
-  command: echo "Stop Home Assistant"
+  ansible.builtin.command: echo "Stop Home Assistant"
   notify: "Stop Home Assistant"
 
 - name: Install defined version of Home Assistant in virtual environment

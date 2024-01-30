@@ -1,6 +1,6 @@
 ---
 - name: Stop running homeassistant service
-  command: echo "Stop Home Assistant"
+  ansible.builtin.command: echo "Stop Home Assistant"
   notify: "Stop Home Assistant"
 
 
@@ -8,7 +8,7 @@
   ansible.builtin.file:
     path: "/home/{{ ha_user }}/ha_backup_restore"
     state: directory
-    mode: 02775
+    mode: "02775"
     owner: "{{ ha_user }}"
     group: "{{ ha_group }}"
 
@@ -17,7 +17,7 @@
     path: "/home/{{ ha_user }}/.homeassistant"
     dest: "/home/{{ ha_user }}/ha_backup_restore/homeassistant_ansible_backup{{ lookup('pipe', 'date +%Y%m%d-%H%M') }}.tgz"
     remove: true
-    mode: 02775
+    mode: "02775"
     owner: "{{ ha_user }}"
     group: "{{ ha_group }}"
 
@@ -50,5 +50,5 @@
     state: absent
 
 - name: Start homeassistent Service
-  command: echo "Start Home Assistant"
+  ansible.builtin.command: echo "Start Home Assistant"
   notify: "Start Home Assistant"
